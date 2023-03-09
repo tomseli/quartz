@@ -51,9 +51,9 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Eclipse
-.metadata
-.settings
+# STM
+*.metadata
+*.settings
 [Rr]elease
 [Dd]ebug
-.launch
+*.launch
