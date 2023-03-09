@@ -98,14 +98,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == 1)
-	  {
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 1);
-	  }
-	  else
-	  {
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 0);
-	  }
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13));
+	  UART_string("Hello world!\n");
   }
   /* USER CODE END 3 */
 }
