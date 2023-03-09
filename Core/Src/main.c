@@ -22,6 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "header.h"
 #include "UART.h"
 /* USER CODE END Includes */
 
@@ -154,8 +155,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13));
-	  UART_string("Hello world!\n");
   }
   /* USER CODE END 3 */
 }
