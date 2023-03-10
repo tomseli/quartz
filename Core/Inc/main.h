@@ -61,10 +61,16 @@ void Error_Handler(void);
 #define B1_GPIO_Port GPIOC
 #define MCO_Pin GPIO_PIN_0
 #define MCO_GPIO_Port GPIOH
+#define A5___V_IS_RC_Pin GPIO_PIN_0
+#define A5___V_IS_RC_GPIO_Port GPIOC
+#define A4___IS_Pin GPIO_PIN_1
+#define A4___IS_GPIO_Port GPIOC
 #define A3___ADC_U_Pin GPIO_PIN_2
 #define A3___ADC_U_GPIO_Port GPIOC
 #define A2___ADC_V_Pin GPIO_PIN_3
 #define A2___ADC_V_GPIO_Port GPIOC
+#define A0___ADC_VDD_2_Pin GPIO_PIN_0
+#define A0___ADC_VDD_2_GPIO_Port GPIOA
 #define A1___ADC_W_Pin GPIO_PIN_1
 #define A1___ADC_W_GPIO_Port GPIOA
 #define USART_TX_Pin GPIO_PIN_2
@@ -87,8 +93,6 @@ void Error_Handler(void);
 #define TCK_GPIO_Port GPIOA
 #define D5___INHV_Pin GPIO_PIN_15
 #define D5___INHV_GPIO_Port GPIOA
-#define D3___INHW_Pin GPIO_PIN_3
-#define D3___INHW_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
